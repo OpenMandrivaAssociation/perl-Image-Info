@@ -1,6 +1,6 @@
 %define module  Image-Info
 %define name    perl-%{module}
-%define version 1.26
+%define version 1.27
 %define release %mkrel 1
 
 Name:           %{name}
@@ -28,10 +28,6 @@ Extract meta information from image files.
 %make
 
 %check
-# don't require Pod::Coverage
-rm -f t/pod_cov.t
-# a couple of tests fails
-rm -f img/test.x?m
 %make test
 
 %install
