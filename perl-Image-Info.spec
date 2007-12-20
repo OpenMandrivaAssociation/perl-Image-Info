@@ -15,6 +15,7 @@ Source:         http://www.cpan.org/modules/by-module/Image/%{module}-%{version}
 BuildRequires:  perl-devel
 %endif
 BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 Extract meta information from image files.
