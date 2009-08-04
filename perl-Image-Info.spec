@@ -14,6 +14,7 @@ Source0:        http://www.cpan.org/modules/by-module/Image/%{upstream_name}-%{u
 %if %{mdkversion} < 1010
 BuildRequires:  perl-devel
 %endif
+BuildRequires:  perl(Compress::Zlib)
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
