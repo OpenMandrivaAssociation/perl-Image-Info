@@ -1,5 +1,5 @@
 %define upstream_name    Image-Info
-%define upstream_version 1.30
+%define upstream_version 1.31
 
 Name:           perl-%{upstream_name}
 Version:        %perl_convert_version %{upstream_version}
@@ -42,4 +42,5 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc README
 %{perl_vendorlib}/Image
+%{perl_vendorlib}/Bundle/Image
 %{_mandir}/*/*
