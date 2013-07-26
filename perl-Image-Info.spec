@@ -1,15 +1,15 @@
 %define upstream_name    Image-Info
-%define upstream_version 1.31
+%define upstream_version 1.36
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 1.36
+Release:	1
 
 Summary:	Extract meta information from image files
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Image/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Image/Image-Info-1.36.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Compress::Zlib)
@@ -110,4 +110,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Wed Nov 26 2003 Guillaume Rousse <guillomovitch@linux-mandrake.com> 1.15-1mdk
 - new version
+
 
