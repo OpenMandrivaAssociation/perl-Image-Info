@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 1.36
-Release:	2
+Release:	3
 
 Summary:	Extract meta information from image files
 License:	GPL+ or Artistic
