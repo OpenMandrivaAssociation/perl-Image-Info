@@ -8,7 +8,7 @@ Release:	3
 Summary:	Extract meta information from image files
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Image/Image-Info-1.36.tar.gz
 
 BuildRequires:	perl-devel
