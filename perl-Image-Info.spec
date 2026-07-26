@@ -1,9 +1,7 @@
 %define upstream_name    Image-Info
-%define upstream_version 1.45
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.45
+Release:	2
 
 Summary:	Extract meta information from image files
 License:	GPL+ or Artistic
@@ -20,7 +18,7 @@ BuildArch:	noarch
 Extract meta information from image files.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -55,9 +53,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Tue Jul 28 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 1.280.0-1mdv2010.0
 + Revision: 402543
-- rebuild using %%perl_convert_version
-
-* Fri Aug 08 2008 Thierry Vignaud <tv@mandriva.org> 1.28-2mdv2009.0
+- rebuild using %1.45 Fri Aug 08 2008 Thierry Vignaud <tv@mandriva.org> 1.28-2mdv2009.0
 + Revision: 268533
 - rebuild early 2009.0 package (before pixel changes)
 
